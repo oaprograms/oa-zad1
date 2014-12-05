@@ -19,7 +19,7 @@ class UserGraph:
 
     def is_friend(self, id1, id2):
         """See if two users are friends
-            Friend ids are stored in a set, so O(n) is constant
+            Friend ids are stored in a set, so function complexity is constant
         """
         if id1 in self.users and id2 in self.users:
             return id2 in self.users[id1].friends
